@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mytools"
+version = "24.2.0"
+description = ""
+authors = ["Ezra Eisbrenner <gitbrenner@pm.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+xarray = "^2024.2"
+numpy = "^1.26"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0"
+dynaconf = "^3.2"
+black = "^24.2"
+matplotlib = "^3.8"
+pandas = "^2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
