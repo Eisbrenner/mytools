@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mytools"
-version = "24.2.0"
+version = "24.2.1"
 description = ""
 authors = ["Ezra Eisbrenner <gitbrenner@pm.me>"]
 readme = "README.md"
