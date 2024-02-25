@@ -39,4 +39,4 @@ def remove_trends(
     )
     trend = result.polyfit_coefficients.sel(degree=1).dot(time)
     mean = (da - trend).sel(**{time_dim: slice(start, end)}).mean(time_dim)
-    return da - mean - trend, trend - mean
+    return (da - mean - trend).drop_vars("degree"), trend - mean
